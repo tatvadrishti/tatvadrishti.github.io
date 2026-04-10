@@ -1,19 +1,8 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #000;
-  color: #fff;
-}
-
-header {
-  background: url('https://images.unsplash.com/photo-1534447677768-be436bb09401') center/cover;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-h1 {
-  color: gold;
-  font-size: 42px;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
 }
 
 .nav {
@@ -21,41 +10,27 @@ h1 {
   padding: 15px;
   text-align: center;
 }
-.nav {
-  background: black;
-  padding: 15px;
-  text-align: center;
-  border-bottom: 1px solid gold;
-}
-
-.nav a {
-  color: gold;
-  margin: 15px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.nav a:hover {
-  color: white;
-}
 
 .nav a {
   color: gold;
   margin: 10px;
   text-decoration: none;
+  font-weight: bold;
+}
+
+h1 {
+  color: gold;
+}
+
+.section {
+  padding: 40px;
+  text-align: center;
 }
 
 .btn {
   background: gold;
   color: black;
   padding: 10px 20px;
-  margin: 10px;
-  display: inline-block;
   text-decoration: none;
-}
-
-.section {
-  padding: 50px 20px;
-  text-align: center;
+  display: inline-block;
 }
