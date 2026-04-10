@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Chat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>AI Astrology Chat</h1>
+
+<input type="text" id="userInput" placeholder="अपना सवाल पूछें">
+<button onclick="reply()">Send</button>
+
+<p id="output"></p>
+
+<script>
+function reply() {
+let input = document.getElementById("userInput").value;
+document.getElementById("output").innerText = "उत्तर: आपकी समस्या का समाधान संभव है।";
+}
+</script>
+
+</body>
+</html>
