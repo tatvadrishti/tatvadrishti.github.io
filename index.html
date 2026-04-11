@@ -34,10 +34,20 @@ color:gold;
 font-size:40px;
 }
 
+/* 🔥 ANIMATION CSS */
 .section {
 padding:50px 20px;
+opacity:0;
+transform: translateY(50px);
+transition: all 1s ease;
 }
 
+.section.show {
+opacity:1;
+transform: translateY(0);
+}
+
+/* 🔥 BUTTON EFFECT */
 .btn {
 background:gold;
 color:black;
@@ -45,8 +55,13 @@ padding:12px 25px;
 text-decoration:none;
 display:inline-block;
 margin:10px;
+transition:0.3s;
 }
 
+.btn:hover {
+background:orange;
+transform:scale(1.1);
+}
 </style>
 
 </head>
@@ -100,6 +115,8 @@ margin:10px;
 <p>📞 7060809573</p>
 <p>📍 Kanpur</p>
 </div>
+
+<!-- 🔥 JS ANIMATION -->
 <script>
 const sections = document.querySelectorAll(".section");
 
@@ -112,5 +129,6 @@ sec.classList.add("show");
 });
 });
 </script>
+
 </body>
 </html>
