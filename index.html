@@ -217,5 +217,39 @@ let r=replies[Math.floor(Math.random()*replies.length)];
 document.getElementById("ans").innerText=r;
 }
 </script> 
+ <div class="section">
+<h2>🔮 Aura Scanner</h2>
+
+<p>अपना नाम लिखें और अपनी ऊर्जा जानें</p>
+
+<input id="name" placeholder="अपना नाम लिखें" style="padding:10px;width:70%"><br><br>
+
+<button class="btn" onclick="scanAura()">Scan Aura</button>
+
+<p id="result" style="margin-top:20px;font-size:18px;color:gold;"></p>
+</div>
+
+<script>
+function scanAura(){
+let name=document.getElementById("name").value;
+
+if(name==""){
+document.getElementById("result").innerText="कृपया नाम दर्ज करें";
+return;
+}
+
+let auras=[
+"✨ आपकी Aura बहुत Positive है – सफलता आपके करीब है",
+"⚠️ आपकी ऊर्जा कमजोर है – नकारात्मक प्रभाव है",
+"🔥 आपकी Aura शक्तिशाली है – आप नेतृत्व करने वाले हैं",
+"🌙 आपकी ऊर्जा आध्यात्मिक है – ध्यान की आवश्यकता है",
+"🧿 ग्रहों का प्रभाव आपकी ऊर्जा को प्रभावित कर रहा है"
+];
+
+let random=Math.floor(Math.random()*auras.length);
+
+document.getElementById("result").innerText= name + " : " + auras[random];
+}
+</script>
 </body>
 </html>
