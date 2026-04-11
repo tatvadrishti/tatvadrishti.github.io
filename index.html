@@ -151,4 +151,29 @@ to {box-shadow:0 0 20px lime;}
 <h2>विशेष प्रश्न कुंडली</h2>
 <p>जब जन्म कुंडली उपलब्ध न हो तब प्रश्न से समाधान</p>
 
-<button class="btn"
+<button class="btn" onclick="alert('कृपया WhatsApp करें')">Check Now</button>
+</div>
+
+<div class="section" id="contact">
+<h2>संपर्क करें</h2>
+<p>📞 7060809573</p>
+<p>📍 Kanpur, Uttar Pradesh</p>
+</div>
+
+<a href="https://wa.me/917060809573" class="whatsapp">💬</a>
+
+<script>
+const sections = document.querySelectorAll(".section");
+
+window.addEventListener("scroll", () => {
+sections.forEach(sec => {
+const top = sec.getBoundingClientRect().top;
+if(top < window.innerHeight - 100){
+sec.classList.add("show");
+}
+});
+});
+</script>
+
+</body>
+</html>
