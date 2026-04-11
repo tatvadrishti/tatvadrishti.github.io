@@ -192,5 +192,30 @@ if(msg.includes("marriage")) reply="विवाह में देरी क�
 document.getElementById("chatText").innerText=reply;
 }
 </script>
+
+ <div class="section">
+<h2>अपना प्रश्न पूछें 🔮</h2>
+
+<input id="q" placeholder="अपनी समस्या लिखें..." style="padding:10px;width:80%"><br><br>
+
+<button class="btn" onclick="answer()">उत्तर देखें</button>
+
+<p id="ans" style="margin-top:20px;color:gold;"></p>
+</div>
+
+<script>
+function answer(){
+let replies=[
+"समाधान संभव है, सही मार्गदर्शन आवश्यक है",
+"आपकी समस्या जल्द समाप्त होगी",
+"कुछ समय कठिन है, पर अंत शुभ होगा",
+"ग्रह बाधा दे रहे हैं, उपाय करें",
+"शुभ संकेत मिल रहे हैं"
+];
+
+let r=replies[Math.floor(Math.random()*replies.length)];
+document.getElementById("ans").innerText=r;
+}
+</script> 
 </body>
 </html>
